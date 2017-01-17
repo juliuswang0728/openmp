@@ -30,6 +30,6 @@ set(Boost_USE_STATIC_RUNTIME OFF)
 set(Boost_INCLUDE_DIR /usr/local/include/boost)
 INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp filters.cpp filters.h process.cpp process.h predictors.cpp predictors.h preprocessors.cpp preprocessors.h)
 add_executable(openmp ${SOURCE_FILES})
 target_link_libraries(openmp ${Boost_LIBRARIES} ${OpenCV_LIBS})
